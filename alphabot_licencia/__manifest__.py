@@ -8,10 +8,11 @@
     "support": "info@alphapos.biz",
     "license": "Other proprietary",
     'sequence': 10,
-    'version': '0.14.22.7.1',
+    'version': '0.15.22.6.28',
     'depends': ['base','account'],
     'data': [
-        'views/res_company_views.xml',         
+        'views/res_company_views.xml',
+        'views/info_lic_view.xml',
     ],
     'qweb': [
     ],
