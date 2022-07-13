@@ -15,7 +15,6 @@ odoo.define('alphabot.GetCustomer', function(require) {
     });
 
 
-
 	var _super_posmodel = models.PosModel.prototype;
     models.PosModel = models.PosModel.extend({
         push_and_invoice_order: function (order) {
