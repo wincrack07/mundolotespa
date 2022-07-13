@@ -3,14 +3,13 @@
     "name": "Alphabot POS",
     'summary': 'Impresora fiscal en Panamá',
     'description': 'Ajustes para usar Alphabot, y conectar Odoo con las impresoras fiscales',
-
     'author': 'AlphaPos',
     'website': 'http://alphapos.biz',
     "support": "info@alphapos.biz",
     "license": "Other proprietary",
-
     'category': 'Point of Sale',
-    'version': '0.15.22.7.1',
+    'sequence': 10,
+    'version': '0.15.22.7.13',
     'depends': ['base','account','point_of_sale','alphabot_invoicing','pos_restaurant'],
 
     'data': [   
