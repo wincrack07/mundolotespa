@@ -31,8 +31,6 @@ class ReportPosPosted(models.AbstractModel):
                 amount_total_without_tax += amount_untaxed
                 amount_total_tax += amount_tax
                 amount_total_return += amount_return
-                opening_dte = start_at
-                closing_dte = stop_at
         order_ids = self.env["pos.order"].search([('id', 'in', orders)])
         user_currency = self.env.company.currency_id
 
