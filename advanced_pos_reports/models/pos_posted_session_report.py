@@ -8,7 +8,7 @@ from odoo.osv.expression import AND
 
 class ReportPosPosted(models.AbstractModel):
     _name = 'report.advanced_pos_reports.report_pos_posted_session'
-
+    
     def get_posted_sessions_details(self, session_ids=False):
         domain = [('state', '=', 'closed')]
         if session_ids:
@@ -71,8 +71,6 @@ class ReportPosPosted(models.AbstractModel):
             'sessions': sessions,
             'categories': categories,
             'today': fields.Datetime.now(),
-            'opening_dte': opening_dte,
-            'closing_dte': closing_dte,
             'total_paid': user_currency.round(total),
             'amount_total_without_tax': amount_total_without_tax,
             'amount_total_tax': amount_total_tax,
@@ -81,6 +79,7 @@ class ReportPosPosted(models.AbstractModel):
             'payments': payments
         }
 
+   
     @api.model
     def _get_report_values(self, docids, data=None):
         data = dict(data or {})
