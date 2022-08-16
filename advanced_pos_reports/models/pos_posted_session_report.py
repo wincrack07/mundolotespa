@@ -18,8 +18,6 @@ class ReportPosPosted(models.AbstractModel):
         amount_total_tax = 0
         amount_total_return = 0
         orders = []
-        opening_dte = start_at
-        closing_dte = stop_at
         for session in sessions:
             for order in session.order_ids.filtered(lambda x: x.state in ['paid', 'done', 'invoiced']):
                 orders.append(order.id)
