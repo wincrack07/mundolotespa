@@ -8,12 +8,14 @@
     'website': 'http://alphapos.biz',
     "support": "info@alphapos.biz",
     "license": "Other proprietary",
-    'version': '0.14.22.7.1',
+    'sequence': 10,
+    'version': '0.15.23.04.08',
     'depends': ['base','account','alphabot_licencia'],
     #'depends': ['base', 'account'],
     'data': [
         'views/account_invoice_view.xml',
-        'views/res_config_settings_views.xml'
+        'views/res_config_settings_views.xml',
+        'views/res_company_views.xml'
     ],
     'qweb': [
     ],
